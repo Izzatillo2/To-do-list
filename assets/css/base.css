@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap');
+
+:root {
+    --white: #fff;
+    --black: #24252c;
+    --gray: #6e6a7c;
+    --blue: #5f33e1;
+    --light-blue: #e7f3ff;
+    --besquice: #ffe9e1;
+    --pink: #f478b8;
+    --light-pink: #ffe4f2;
+    --violet: #5f33e1;
+    --orange: #ff7d53;
+
+    --transition: 0.3s all ease;
+
+    --fs-title: 25px;
+    --fs-content: 19px;
+    --fs-card: 16px;
+    --fs-card-text: 14px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+    user-select: none;
+}
+
+html,
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    font-family: 'Lexend Deca', sans-serif;
+    background-color: var(--white);
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+    width: 0.4rem;
+    height: 0.4rem;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--white);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--black);
+    border-radius: 1rem;
+}
+
+input {
+    border: 0;
+    padding-left: 10px;
+}
+
+button {
+    border: 0;
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+    /* white-space: nowrap; */
+}
+
+li {
+    list-style-type: none;
+}
+
+.container {
+    width: 540px;
+    margin: 0 auto;
+    padding: 0 12px;
+}
+
+@media (max-width: 575px) {
+    .container {
+        width: 100%;
+    }
+}
+
+.footer {
+    position: fixed;
+    width: 100%;
+    height: 60px;
+    background-color: #eee9ff;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    border-top: 7px solid var(--white);
+}
+
+.footer__nav {
+    width: 340px;
+    margin: 0 auto;
+}
+
+.footer__nav .list {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    position: relative;
+    z-index: 1;
+}
+
+.list__item__link {
+    display: inline-block;
+
+    width: 60px;
+    height: 60px;
+    position: relative;
+    color: var(--white);
+}
+
+.list__item__link .icon {
+    font-size: 25px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transition: all 0.3s ease;
+    transform: translate(-50%, -50%);
+}
+
+.list__item__link .text {
+    position: absolute;
+    bottom: 5px;
+    opacity: 0;
+    transition: all 0.3s ease;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 12px;
+}
+/* 
+.list__item__link:hover .icon {
+    transform: translate(-50%, -150%);
+}
+
+.list__item__link:hover .text {
+    opacity: 1;
+} */
+
+.active .icon {
+    transform: translate(-50%, -150%);
+}
+
+.active .text {
+    opacity: 1;
+}
+
+.circle {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: var(--blue);
+    z-index: -1;
+    left: 0;
+    top: calc(-44% - 1px);
+    border: 5px solid var(--white);
+    transition: all 0.3s ease;
+}
+.circle::before,
+.circle::after {
+    position: absolute;
+    content: '';
+    width: 15px;
+    height: 15px;
+    background-color: transparent;
+    border-top-right-radius: 50%;
+    left: -18px;
+    top: 29px;
+
+    box-shadow: 0 -6px 0 var(--white);
+}
+.circle::after {
+    border-top-left-radius: 50%;
+    border-top-right-radius: 0;
+    right: -18px;
+    left: auto;
+}
+
+/* .list__item:nth-child(1):hover ~ .circle {
+    transform: translateX(calc(63.5px * 0));
+}
+
+.list__item:nth-child(2):hover ~ .circle {
+    transform: translateX(calc(69px * 1));
+}
+
+.list__item:nth-child(3):hover ~ .circle {
+    transform: translateX(calc(69.5px * 2));
+}
+
+.list__item:nth-child(4):hover ~ .circle {
+    transform: translateX(calc(69.8px * 3));
+}
+
+.list__item:nth-child(5):hover ~ .circle {
+    transform: translateX(calc(69.8px * 4));
+} */
+
+.list__item:nth-child(1).active ~ .circle {
+    transform: translateX(calc(63.5px * 0));
+}
+
+.list__item:nth-child(2).active ~ .circle {
+    transform: translateX(calc(69px * 1));
+}
+
+.list__item:nth-child(3).active ~ .circle {
+    transform: translateX(calc(69.5px * 2));
+}
+
+.list__item:nth-child(4).active ~ .circle {
+    transform: translateX(calc(69.8px * 3));
+}
+
+.list__item:nth-child(5).active ~ .circle {
+    transform: translateX(calc(69.8px * 4));
+}

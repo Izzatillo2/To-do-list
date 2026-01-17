@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./assets/css/today.css" />
+        <link rel="stylesheet" href="./assets/css/base.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+            crossorigin="anonymous"
+        />
+
+        <title>Calendar</title>
+    </head>
+
+    <body>
+        <header class="header">
+            <div class="container">
+                <div class="header__back">
+                    <i class="fa-solid fa-arrow-left"></i>
+                </div>
+                <h1 class="header__title">Today’s Tasks</h1>
+                <div class="header__notif">
+                    <i class="fa-solid fa-bell"></i>
+                </div>
+            </div>
+        </header>
+        <main>
+            <section class="selector">
+                <div class="container">
+                    <div class="selector__content">
+                        <div class="selector__content__cards">
+                            <p class="month">May</p>
+                            <b class="day">23</b>
+                            <p class="weekdays">Fri</p>
+                        </div>
+                        <div class="selector__content__cards">
+                            <p class="month">May</p>
+                            <b class="day">24</b>
+                            <p class="weekdays">Sat</p>
+                        </div>
+                        <div class="selector__content__cards">
+                            <p class="month">May</p>
+                            <b class="day">25</b>
+                            <p class="weekdays">Sun</p>
+                        </div>
+                        <div class="selector__content__cards">
+                            <p class="month">May</p>
+                            <b class="day">26</b>
+                            <p class="weekdays">Mon</p>
+                        </div>
+                        <div class="selector__content__cards">
+                            <p class="month">May</p>
+                            <b class="day">27</b>
+                            <p class="weekdays">Tue</p>
+                        </div>
+                    </div>
+
+                    <div class="task">
+                        <div class="task__content">
+                            <div class="task__contnet__top">
+                                <a href="" class="link">All</a>
+                                <a href="" class="link">To do</a>
+                                <a href="" class="link">In Progress</a>
+                                <a href="" class="link">Completed</a>
+                            </div>
+                            <div class="task__contnet__main">
+                                <div class="cards">
+                                    <h3 class="cards__title">
+                                        Grocery shopping app design
+                                        <span class="cards__title__span"><i class="fa-solid fa-bag-shopping"></i></span>
+                                    </h3>
+                                    <p class="cards__text">Market Research</p>
+                                    <div class="cards__wrap">
+                                        <div class="cards__wrap__time">
+                                            <span class="icon"><i class="fa-solid fa-clock"></i></span>
+                                            <p class="time">10:00 AM</p>
+                                        </div>
+                                        <a href="" class="link dark-blue">Done</a>
+                                    </div>
+                                </div>
+                                <div class="cards">
+                                    <h3 class="cards__title">
+                                        Grocery shopping app design<span class="cards__title__span"
+                                            ><i class="fa-solid fa-bag-shopping"></i
+                                        ></span>
+                                    </h3>
+                                    <p class="cards__text">Competitive Analysis</p>
+                                    <div class="cards__wrap">
+                                        <div class="cards__wrap__time">
+                                            <span class="icon"><i class="fa-solid fa-clock"></i></span>
+                                            <p class="time">12:00 PM</p>
+                                        </div>
+                                        <a href="" class="link orange">In Progress</a>
+                                    </div>
+                                </div>
+                                <div class="cards">
+                                    <h3 class="cards__title">
+                                        Uber Eats redesign challange<span class="cards__title__span"><i class="fa-solid fa-user"></i></span>
+                                    </h3>
+                                    <p class="cards__text">Create Low-fidelity Wireframe</p>
+                                    <div class="cards__wrap">
+                                        <div class="cards__wrap__time">
+                                            <span class="icon"><i class="fa-solid fa-clock"></i></span>
+                                            <p class="time">07:00 PM</p>
+                                        </div>
+                                        <a href="" class="link blue">To-do</a>
+                                    </div>
+                                </div>
+                                <div class="cards">
+                                    <h3 class="cards__title">
+                                        About design sprint <span class="cards__title__span"><i class="fa-solid fa-book-open"></i></span>
+                                    </h3>
+                                    <p class="cards__text">How to pitch a Design Sprint</p>
+                                    <div class="cards__wrap">
+                                        <div class="cards__wrap__time">
+                                            <span class="icon"><i class="fa-solid fa-clock"></i></span>
+                                            <p class="time">09:00 PM</p>
+                                        </div>
+                                        <a href="" class="link blue">To-do</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="container">
+                <nav class="footer__nav">
+                    <ul class="list">
+                        <li class="list__item">
+                            <a href="./home.html" class="list__item__link">
+                                <span class="icon"><i class="fa-solid fa-house"></i></span>
+                                <span class="text">Home</span>
+                            </a>
+                        </li>
+                        <li class="list__item active">
+                            <a href="./today.html" class="list__item__link">
+                                <span class="icon"><i class="fa-solid fa-calendar-days"></i></span>
+                                <span class="text">Calendar</span>
+                            </a>
+                        </li>
+                        <li class="list__item">
+                            <a href="./project.html" class="list__item__link">
+                                <span class="icon"><i class="fa-solid fa-plus"></i></span>
+                                <span class="text">create</span>
+                            </a>
+                        </li>
+                        <li class="list__item">
+                            <a href="#" class="list__item__link">
+                                <span class="icon"><i class="fa-solid fa-chart-pie"></i></span>
+                                <span class="text">notes</span>
+                            </a>
+                        </li>
+                        <li class="list__item">
+                            <a href="#" class="list__item__link">
+                                <span class="icon"><i class="fa-solid fa-gear"></i></span>
+                                <span class="text">profile</span>
+                            </a>
+                        </li>
+                        <span class="circle"></span>
+                    </ul>
+                </nav>
+            </div>
+        </footer>
+    </body>
+</html>

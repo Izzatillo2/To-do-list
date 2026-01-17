@@ -1,0 +1,249 @@
+.header {
+    padding: 30px;
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.header__back {
+    display: flex;
+    align-items: center;
+}
+
+.header__back i {
+    font-size: 20px;
+
+}
+
+.header__title {
+    font-size: var(--fs--content);
+    font-weight: 600;
+    color: var(--black);
+}
+
+.header__notif i {
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.task {
+    padding: 30px 0;
+}
+
+.task__content {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 20px;
+    box-shadow: 0px 4px 32px 0px #0000000A;
+    border-radius: 15px;
+
+}
+
+.task__content__left {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.task__content__left .icon {
+    width: 24px;
+    height: 24px;
+    background-color: #FFE4F2;
+    color: #F478B8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 7px;
+}
+
+.task__content__left .el {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 3px;
+
+}
+
+.task__content__left .el__title {
+    font-size: var(--fs-card-text);
+    font-weight: 400;
+    color: var(--gray);
+}
+
+.task__content__left .el__text {
+    font-size: var(--fs-card);
+    font-weight: 400;
+    color: var(--black);
+}
+
+.task__content__icon i {
+    font-size: 20px;
+}
+
+.project {
+    padding: 25px 0;
+}
+
+.project__content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2px;
+    padding: 16px;
+    box-shadow: 0px 4px 32px 0px #0000000A;
+    border-radius: 15px;
+}
+
+.project__content__title {
+    font-size: var(--fs-card-text);
+    font-weight: 400;
+    color: var(--gray);
+}
+
+.project__content__text {
+    font-size: var(--fs-card);
+    font-weight: 400;
+    color: var(--black);
+}
+
+.desk {
+    padding: 25px 0;
+}
+
+.desk__content {
+    padding: 16px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 32px 0px #0000000A;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+}
+
+.desk__content__title {
+    font-size: var(--fs-card-text);
+    font-weight: 400;
+    color: var(--gray);
+}
+
+.desk__content__text {
+    font-size: var(--fs-card);
+    font-weight: 400;
+    color: var(--black);
+}
+
+.calendar {
+    padding: 24px 0;
+}
+
+.calendar__content {
+    display: flex;
+    flex-direction: column;
+
+    gap: 24px;
+
+}
+
+.calendar__content__cards {
+    padding: 16px;
+    box-shadow: 0px 4px 32px 0px #0000000A;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 15px;
+
+}
+
+.calendar__content__left {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+
+.calendar__content__left .icon {
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.el__title {
+    font-size: var(--fs-card-text);
+    font-weight: 400;
+    color: var(--gray);
+}
+
+.el__text {
+    font-size: var(--fs-card);
+    font-weight: 400;
+    color: var(--black);
+}
+
+.logo {
+    padding: 25px 0;
+}
+
+.logo__content {
+    padding: 16px;
+    box-shadow: 0px 4px 32px 0px #0000000A;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 15px;
+}
+
+.logo__content__left {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.logo__content__left img {
+    width: 44px;
+    height: 44px;
+    object-fit: cover;
+}
+
+.logo__content__left .el {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.logo__content .el__title {
+    font-size: var(--fs-card-text);
+    font-weight: 600;
+    color: #047C78;
+}
+
+.logo__content .el__text {
+    font-size: var(--fs-card-text);
+    font-weight: 600;
+    color: #F2582C;
+}
+
+.logo__content__link {
+    padding: 8px 16px;
+    background-color: #EDE8FF;
+    color: var(--blue);
+    border-radius: 7px;
+    font-size: 11px;
+    font-weight: 400;
+}
+.add{
+    padding: 73px 0;
+    display: flex;
+    justify-content: center;
+}
+.add__link{
+
+    padding: 14px 110px;
+    background-color: var(--blue);
+    color: var(--white);
+    border-radius: 14px;
+    font-size: var(--fs--content);
+    font-weight: 600;
+}
